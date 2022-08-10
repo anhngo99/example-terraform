@@ -18,7 +18,7 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "null_resource" "install-azureCli" {
+resource "null_resource" "install" {
  provisioner "local-exec" {
        command = "pwd && ls"
 #    <<EOH
