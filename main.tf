@@ -21,7 +21,7 @@ data "aws_ami" "ubuntu" {
 resource "null_resource" "install-dsfsd" {
  provisioner "local-exec" {
        command = <<EOH
-                  curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+                  curl -sL https://aka.ms/InstallAzureCLIDeb | bash
                    az --version
                   EOH
 #     interpreter = ["/bin/bash", "-c"]
