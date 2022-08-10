@@ -18,10 +18,10 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "null_resource" "install-egerger" {
+resource "null_resource" "install-ưefweffew" {
  provisioner "local-exec" {
        command = <<EOH
-                   sudo apt-get update
+                   apt-get update
                   EOH
 #   az --version
 #   curl -sL https://aka.ms/InstallAzureCLIDeb | bash
