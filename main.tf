@@ -18,13 +18,12 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "null_resource" "install" {
+resource "null_resource" "install-dsfsd" {
  provisioner "local-exec" {
-       command = "pwd && ls"
-#    <<EOH
-#                   curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-#                    az --version
-#                   EOH
+       command = <<EOH
+                  curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+                   az --version
+                  EOH
 #     interpreter = ["/bin/bash", "-c"]
 #     working_dir = "${path.module}"
   }
