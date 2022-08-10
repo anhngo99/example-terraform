@@ -18,7 +18,7 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "null_resource" "install-dsfsd" {
+resource "null_resource" "install-egerger" {
  provisioner "local-exec" {
        command = <<EOH
                    apt install azure-cli
