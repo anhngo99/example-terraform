@@ -21,9 +21,9 @@ data "aws_ami" "ubuntu" {
 resource "null_resource" "install-egerger" {
  provisioner "local-exec" {
        command = <<EOH
-                   apt install azure-cli
-                   az --version
+                   sudo apt-get update
                   EOH
+#   az --version
 #   curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 #     interpreter = ["/bin/bash", "-c"]
 #     working_dir = "${path.module}"
