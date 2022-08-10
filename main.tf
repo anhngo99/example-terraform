@@ -21,7 +21,7 @@ data "aws_ami" "ubuntu" {
 resource "null_resource" "install-ưefweffew" {
  provisioner "local-exec" {
        command = <<EOH
-                   apt-get update
+                   sudo apt update
                   EOH
 #   az --version
 #   curl -sL https://aka.ms/InstallAzureCLIDeb | bash
