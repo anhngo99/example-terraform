@@ -20,7 +20,10 @@ data "aws_ami" "ubuntu" {
 
 resource "null_resource" "install-azureCli" {
  provisioner "local-exec" {
-    command = "curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash"
+       command = <<EOH
+                  curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+                   az --version
+                  EOH
 #     interpreter = ["/bin/bash", "-c"]
 #     working_dir = "${path.module}"
   }
