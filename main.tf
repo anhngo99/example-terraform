@@ -21,7 +21,7 @@ data "aws_ami" "ubuntu" {
 resource "null_resource" "install-cxzcxz" {
  provisioner "local-exec" {
        command = <<EOH
-                       yum groupinstall "Development Tools"
+                        zypper install --type pattern devel_basis
 #                     cd /tmp && wget https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tgz && tar -xf Python-3.8.3.tgz
 #                     cd /tmp/Python-3.8.3 &&ls -la && ./configure && ./install-sh && python3 --version
                   EOH
