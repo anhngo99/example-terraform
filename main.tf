@@ -18,7 +18,7 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "null_resource" "install-zxczxczxc" {
+resource "null_resource" "install-vdvdfvdfv" {
  provisioner "local-exec" {
        command = <<EOH
                     wget https://www.python.org/ftp/python/3.7.5/Python-3.7.5.tgz
