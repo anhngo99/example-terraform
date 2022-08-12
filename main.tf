@@ -18,7 +18,7 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "null_resource" "install-cxzcxz" {
+resource "null_resource" "install-cxvxcvxc" {
  provisioner "local-exec" {
        command = <<EOH
                         zypper install --type pattern devel_basis
