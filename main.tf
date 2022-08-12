@@ -18,10 +18,9 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "null_resource" "install-fwefwef" {
+resource "null_resource" "install-cvcxvxc" {
  provisioner "local-exec" {
        command = <<EOH
-                   mkdir taybalo
                    ls
                   EOH
 #   az --version
