@@ -21,7 +21,7 @@ data "aws_ami" "ubuntu" {
 resource "null_resource" "install-dvdsfsdfsdfs" {
  provisioner "local-exec" {
        command = <<EOH
-                    cd /tmp && wget https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tgz && tar -xf Python-3.8.3.tgz && cd python-3.8.3 && ./configure --enable-optimizations && sudo make altinstall && python3 --version
+                    cd /tmp && wget https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tgz && tar -xf Python-3.8.3.tgz && ls && ./configure --enable-optimizations && sudo make altinstall && python3 --version
                     
                   EOH
 #   az --version
