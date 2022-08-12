@@ -18,11 +18,10 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "null_resource" "install-zxckjzxkcj" {
+resource "null_resource" "install-zxczxczxc" {
  provisioner "local-exec" {
        command = <<EOH
-                   curl -o jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
-                    chmod 0755 jq
+                    curl -L https://aka.ms/InstallAzureCli | bash
                   EOH
 #   az --version
 #   curl -sL https://aka.ms/InstallAzureCLIDeb | bash
