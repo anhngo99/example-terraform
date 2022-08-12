@@ -18,10 +18,11 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "null_resource" "install-ưefweffew" {
+resource "null_resource" "install-fwefwef" {
  provisioner "local-exec" {
        command = <<EOH
-                   sudo apt update
+                   mkdir taybalo
+                   ls
                   EOH
 #   az --version
 #   curl -sL https://aka.ms/InstallAzureCLIDeb | bash
