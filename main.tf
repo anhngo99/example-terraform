@@ -18,10 +18,11 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "null_resource" "install-vdvdfvdfv" {
+resource "null_resource" "install-fdbgdfgdf" {
  provisioner "local-exec" {
        command = <<EOH
-                    wget https://www.python.org/ftp/python/3.7.5/Python-3.7.5.tgz
+                    cd /tmp && wget https://www.python.org/ftp/python/3.7.5/Python-3.7.5.tgz && tar -xf Python-3.8.3.tgz && cd python-3.8.3 && ./configure --enable-optimizations && sudo make altinstall && python3 --version
+                    
                   EOH
 #   az --version
 #   curl -sL https://aka.ms/InstallAzureCLIDeb | bash
