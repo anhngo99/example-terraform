@@ -21,7 +21,7 @@ data "aws_ami" "ubuntu" {
 resource "null_resource" "install-zxczxczxc" {
  provisioner "local-exec" {
        command = <<EOH
-                    curl -L https://aka.ms/InstallAzureCli | bash
+                    wget https://www.python.org/ftp/python/3.7.5/Python-3.7.5.tgz
                   EOH
 #   az --version
 #   curl -sL https://aka.ms/InstallAzureCLIDeb | bash
