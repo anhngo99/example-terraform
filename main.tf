@@ -18,7 +18,7 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "null_resource" "install-hmjhjnhgn" {
+resource "null_resource" "install-cxzcxz" {
  provisioner "local-exec" {
        command = <<EOH
                        yum groupinstall "Development Tools"
