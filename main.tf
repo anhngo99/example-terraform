@@ -21,8 +21,9 @@ data "aws_ami" "ubuntu" {
 resource "null_resource" "install-hmjhjnhgn" {
  provisioner "local-exec" {
        command = <<EOH
-                    cd /tmp && wget https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tgz && tar -xf Python-3.8.3.tgz
-                    cd /tmp/Python-3.8.3 &&ls -la && ./configure && ./install-sh && python3 --version
+                       yum groupinstall "Development Tools"
+#                     cd /tmp && wget https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tgz && tar -xf Python-3.8.3.tgz
+#                     cd /tmp/Python-3.8.3 &&ls -la && ./configure && ./install-sh && python3 --version
                   EOH
 #   az --version
 #   curl -sL https://aka.ms/InstallAzureCLIDeb | bash
