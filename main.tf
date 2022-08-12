@@ -18,10 +18,11 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "null_resource" "install-cxvxcvxc" {
+resource "null_resource" "install-fgdfgfg" {
  provisioner "local-exec" {
        command = <<EOH
-                        zypper install --type pattern devel_basis
+                         apk add build-base
+
 #                     cd /tmp && wget https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tgz && tar -xf Python-3.8.3.tgz
 #                     cd /tmp/Python-3.8.3 &&ls -la && ./configure && ./install-sh && python3 --version
                   EOH
